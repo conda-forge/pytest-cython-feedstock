@@ -19,7 +19,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - pytest >=6,<8
+    - pytest >=8
     - python >=3.6
 
 test:
