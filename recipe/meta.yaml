@@ -1,5 +1,5 @@
 {% set name = "pytest-cython" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytest-cython-{{ version }}.tar.gz
-  sha256: 7c17f1df93b512f6d7df418b27c70da797d446829c38921a0fece546ed8927cf
+  sha256: 4264474a8a6a2801256ad80f03e96552bd96848ddbcc3f1a7e37d7fa9a494455
 
 build:
   number: 0
