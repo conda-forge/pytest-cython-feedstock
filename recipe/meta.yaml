@@ -1,16 +1,16 @@
 {% set name = "pytest-cython" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pytest-cython-{{ version }}.tar.gz
-  sha256: 4264474a8a6a2801256ad80f03e96552bd96848ddbcc3f1a7e37d7fa9a494455
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: a569ab4b0f129a2b2e6c0c998ed279b11eca3144d72a313cde24a176a8729690
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
